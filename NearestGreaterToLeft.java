@@ -13,6 +13,7 @@ public class NearestGreaterToLeft{
 			List<Integer> list=new ArrayList<>();
 			Stack<Integer> st=new Stack<>();
 			for (int i=0;i<n;i++){
+				//remove the element from the stack until stack peek is less than and equal to ar[i]
 				while (!st.isEmpty() && ar[i]>=st.peek()) st.pop();				
 				if (st.isEmpty()) list.add(-1);
 				else list.add(st.peek());
