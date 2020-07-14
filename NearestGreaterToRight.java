@@ -22,7 +22,9 @@ class NearestGreaterToRight{
 		        else list.add(s.peek());
 		        s.push(ar[i]);
 		    }
-		    for (int i=n-1;i>=0;i--) System.out.print(list.get(i)+" ");
+			
+		    for (int i=n-1;i>=0;i--) 
+			    System.out.print(list.get(i)+" ");
 		    System.out.println();
 		}
 	}
