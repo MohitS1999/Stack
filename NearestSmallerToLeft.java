@@ -13,12 +13,16 @@ public class NearestSmallerToLeft{
 			List<Integer> list=new ArrayList<>();
 			Stack<Integer> st=new Stack<>();
 			for (int i=0;i<n;i++){
+				
 				while (!st.isEmpty() && ar[i]<=st.peek()) st.pop();
 				if (st.isEmpty()) list.add(-1);
 				else list.add(st.peek());
 				st.push(ar[i]);
+				
 			}
-			for (int i=0;i<n;i++) System.out.print(list.get(i)+" ");
+			for (int i=0;i<n;i++) 
+				System.out.print(list.get(i)+" ");
+			
 			System.out.println();
 		}
 	}
