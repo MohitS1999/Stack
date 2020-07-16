@@ -14,10 +14,15 @@ public class NearestSmallerToRight{
 			Stack<Integer> st=new Stack<>();
 			List<Integer> list=new ArrayList<>();
 			for (int i=n-1;i>=0;i--){
+				
 				while (!st.isEmpty() && ar[i]<=st.peek()) st.pop();	
+				
 				if (st.isEmpty()) list.add(-1);
+				
 				else list.add(st.peek());
+				
 				st.push(ar[i]);
+				
 			}
 			for (int i=n-1;i>=0;i--)
 				System.out.print(list.get(i)+" ");
