@@ -17,9 +17,12 @@ class SaveGotham{
 		    Stack<Integer> s=new Stack<>();
 		    int sum=0;
 		    for (int i=n-1;i>=0;i--){
+			    
 		        while (!s.isEmpty() && ar[i]>=s.peek()) s.pop();
-		        sum+=(s.isEmpty()) ? 0 : s.peek();
-		        s.push(ar[i]);
+		        
+			sum+=(s.isEmpty()) ? 0 : s.peek();
+		        
+			s.push(ar[i]);
 		    }
 		    System.out.println(sum);
 		}
