@@ -22,7 +22,6 @@ public class StockSpanProblem{
 				while (!s.isEmpty() && ar[i]<=ar[s.peek()]) s.pop();
 				//this handles two cases
 				//1) when there is no element in the stack: simply i+1 as no all previous elements will be smaller thats why they were  popped out
-            
 				//2) if not empty, keep popping in above step till you reach something bigger that can not 
 				//be added to span of current observed element
 				res[i]=(s.isEmpty()) ? i+1 : i-s.peek();
