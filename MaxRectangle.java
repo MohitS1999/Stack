@@ -32,6 +32,7 @@ public class MaxRectangle{
         }
         return maxRec;
     }
+	//gives the hisyogram
     public static int Histogram(int[] ar,int n){
 	    int res[]=new int[n];
 		Stack<Integer> s=new Stack<>();
