@@ -25,8 +25,6 @@ public class MaxRectangleAreaHistogram{
 			res[i]=(s.isEmpty()) ? i+1 :i-s.peek();
 			s.push(i);
 		}
-		// for (int i=0;i<n;i++)
-				// System.out.print(res[i]+" ");
 		System.out.println();
 		s.clear();
 		s.push(n-1);
