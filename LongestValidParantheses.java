@@ -27,7 +27,7 @@ class LongestValidParantheses{
 		                    cnt=Math.max(cnt,i-s.peek());
 		        }
 		    }
-		    
+		    //remove the garbage value of stack
 		    s.clear();
 		    System.out.println(cnt);
 		}
