@@ -9,6 +9,7 @@ public class SuperReducedString{
             if (!st.isEmpty() && c==st.peek()) st.pop();
             else st.push(c);
         }
+        //if the string is empty
         if (st.isEmpty()){
             System.out.println("Empty String");
             return;
