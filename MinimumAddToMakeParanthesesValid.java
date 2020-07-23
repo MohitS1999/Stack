@@ -7,11 +7,9 @@ class MinimumAddToMakeParanthesesValid{
         String s=sc.next();
         int cnt=0;
         Stack<Integer> st=new Stack<>();
-        // System.out.println(st.size());
         for (char c:s.toCharArray()){
             if (c=='('){
                 st.push(1);
-				//System.out.println(c);
 				}
             else if ((!st.isEmpty()) && c==')' && st.peek()==1)
                 st.pop();
