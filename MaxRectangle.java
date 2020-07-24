@@ -18,6 +18,7 @@ public class MaxRectangle{
 			System.out.println(maxArea(m,row,col));
 		}
 	}
+	//Max Area
 	public static int maxArea(int a[][], int m, int n) {
         int maxRec=0;
         int ar[]=new int[n];
