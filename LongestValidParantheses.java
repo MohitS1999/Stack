@@ -18,10 +18,10 @@ class LongestValidParantheses{
 		    for (int i=0;i<c.length;i++){
 		        if (c[i]=='(') s.push(i);
 		        else {  
-						// if the stack is not empty then we pop out the element from the stack
+				// if the stack is not empty then we pop out the element from the stack
 		                if (!s.isEmpty()) s.pop();
-						//push the unwanted lelemnt in the stack if the stack is empty like                                                      )()()))().
-						//at position 6 stak is empty and unwanted element also                                                                  012345678.
+				//push the unwanted lelemnt in the stack if the stack is empty like                                                      )()()))().
+				//at position 6 stak is empty and unwanted element also                                                                  012345678.
 		                if (s.isEmpty()) s.push(i);
 		                else if (!s.isEmpty())
 		                    cnt=Math.max(cnt,i-s.peek());
