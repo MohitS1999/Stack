@@ -15,7 +15,7 @@ class LongestValidParantheses{
 		    Stack<Integer> s=new Stack<>();
 			//starting index of stack
 		    s.push(-1);
-		    for (int i=0;i<c.length;i++){
+		    for (int i=0 ; i<c.length ; i++){
 		        if (c[i]=='(') s.push(i);
 		        else {  
 				// if the stack is not empty then we pop out the element from the stack.
